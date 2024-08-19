@@ -18,7 +18,7 @@ Este é o repositório do meu portfólio como Desenvolvedor Frontend. O site exi
 
 ## Como Visualizar
 
-Você pode acessar o portfólio online através deste [link](https://github.com/gabriellsv).
+Você pode acessar o portfólio online através deste [link](https://gabriellsv.github.io/portifolio/).
 
 ## Contato
 
