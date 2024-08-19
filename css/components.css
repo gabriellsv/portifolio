@@ -1,0 +1,68 @@
+/* ==========================================
+   Botão de Rolagem
+   ========================================== */
+
+   .scrollToTopBtn {
+    align-items: center; /* Centraliza os itens horizontalmente */
+    background-color: transparent; /* Define o fundo transparente */
+    border: none; /* Remove a borda */
+    bottom: 20px; /* Define a distância do fundo */
+    cursor: pointer; /* Define o cursor como pointer */
+    display: flex; /* Usa flexbox para alinhamento */
+    flex-direction: column; /* Alinha os itens em uma coluna */
+    position: fixed; /* Posiciona o botão de forma fixa */
+    right: 20px; /* Define a distância da direita */
+    transition: transform 0.3s ease; /* Transição suave para transformação */
+    z-index: 1000; /* Define a camada do botão sobre outros elementos */
+}
+
+.scrollToTopBtn i {
+    color: #e6324b; /* Define a cor do ícone */
+    font-size: 45px; /* Define o tamanho do ícone */
+}
+
+.arrow-up {
+    border-bottom: 10px solid #e6324b; /* Define a borda inferior com cor */
+    border-left: 5px solid transparent; /* Define borda transparente à esquerda */
+    border-right: 5px solid transparent; /* Define borda transparente à direita */
+    margin-top: 5px; /* Adiciona margem superior */
+    padding-top: 5px; /* Adiciona padding superior */
+}
+
+/* ==========================================
+   Redes Sociais
+   ========================================== */
+
+.redes-sociais {
+    align-items: center; /* Centraliza verticalmente */
+    display: flex; /* Alinha os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style-type: none; /* Remove os marcadores padrão da lista */
+    margin: 20px 0; /* Adiciona margem em cima e embaixo da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+}
+
+.redes-sociais li {
+    align-items: center; /* Centraliza verticalmente */
+    display: flex; /* Garante que o conteúdo do li seja flexível */
+    margin: 0 15px; /* Espaçamento entre os ícones */
+}
+
+.redes-sociais a {
+    align-items: center; /* Centraliza o ícone verticalmente */
+    border-radius: 50%; /* Torna o fundo circular */
+    color: #e6324b; /* Cor dos ícones */
+    display: flex; /* Alinha o ícone centralizado */
+    font-size: 30px; /* Ajusta o tamanho dos ícones */
+    height: 50px; /* Define a altura do círculo */
+    justify-content: center; /* Centraliza o ícone horizontalmente */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Transição suave para cor e transformação */
+    width: 50px; /* Define a largura do círculo */
+}
+
+.redes-sociais a:hover {
+    background-color: #e6324b; /* Cor de fundo ao passar o mouse */
+    color: #fafafa; /* Cor dos ícones ao passar o mouse */
+    transform: scale(0.9); /* Reduz o tamanho do ícone ao passar o mouse */
+}

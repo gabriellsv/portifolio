@@ -1,0 +1,83 @@
+/* ==========================================
+   Menu
+   ========================================== */
+
+   .menu {
+    align-items: center; /* Centraliza verticalmente */
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between; /* Espaça o título e os links */
+    margin: 0 auto; /* Centraliza o menu horizontalmente */
+    max-width: 1200px; /* Limita a largura máxima do menu */
+    padding: 10px 20px; /* Espaçamento interno */
+}
+
+.menu a {
+    color: #35363499; /* Cor do texto dos links */
+    font-weight: bold; /* Deixa o texto dos links em negrito */
+    margin-left: 30px; /* Espaçamento entre os links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    transition: transform 0.3s; /* Transição suave para o efeito de transformação */
+}
+
+.menu a:hover {
+    color: #000000; /* Muda a cor do texto ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do link ao passar o mouse */
+}
+
+.menu h2 {
+    color: #e6324b; /* Cor do texto do título */
+    font-size: 30px;
+    margin: 0; /* Remove margem do título */
+}
+
+.menu nav {
+    display: flex; /* Exibe os links horizontalmente */
+}
+
+/* ==========================================
+   Rodapé
+   ========================================== */
+
+.footer {
+    background-color: #2b2b2b; /* Define a cor de fundo */
+    bottom: 0; /* Define a distância do fundo */
+    color: #fff; /* Define a cor do texto */
+    font-size: 14px; /* Define o tamanho da fonte */
+    left: 0; /* Define a distância da esquerda */
+    padding: 10px 0; /* Adiciona padding superior e inferior */
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Define a largura total */
+    z-index: 10; /* Define a camada do rodapé sobre outros elementos */
+}
+
+.footer h1 {
+    color: #fff;
+}
+
+.footer p {
+    color: #fff;
+    margin: 0; /* Remove a margem padrão */
+}
+
+/* ==========================================
+   Responsividade
+   ========================================== */
+
+@media (max-width: 768px) {
+    .menu {
+        align-items: center; /* Centraliza horizontalmente */
+        flex-direction: column; /* Empilha o título e os links verticalmente */
+        margin: 0 20px; /* Reduz a margem lateral */
+        padding: 10px; /* Ajusta o padding */
+    }
+
+    .menu a {
+        margin: 10px 0; /* Espaçamento vertical entre os links */
+        padding: 5px 10px; /* Ajusta o padding */
+    }
+
+    .menu nav {
+        margin-top: 10px; /* Adiciona margem superior para espaçar o menu */
+    }
+}

@@ -1,0 +1,52 @@
+/* ==========================================
+   Serviços
+   ========================================== */
+
+   .services {
+    color: rgb(0, 0, 0); /* Define a cor do texto */
+    display: flex; /* Usa flexbox para alinhamento */
+    flex-wrap: wrap; /* Permite a quebra de linha dos itens */
+    justify-content: center;
+    padding-bottom: 20px;
+    text-align: center; /* Centraliza o texto */
+}
+
+.services h2 {
+    color: #353634;
+    font-size: 2em; /* Define o tamanho da fonte do título */
+    margin-bottom: 40px; /* Adiciona margem inferior ao título */
+}
+
+.service-item {
+    background: #f2e3c6; /* Define o fundo dos itens */
+    border: 2px solid #f2e3c6; /* Adiciona uma borda ao redor dos itens */
+    border-radius: 25px; /* Arredonda os cantos dos itens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao redor dos itens */
+    display: flex; /* Usa flexbox para alinhamento */
+    flex-direction: column; /* Alinha os itens em uma coluna */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    margin: 50px 50px; /* Adiciona margem em cima e embaixo e centraliza horizontalmente */
+    padding: 20px; /* Adiciona padding em volta do conteúdo */
+    transition: transform 0.3s; /* Adiciona uma transição suave ao transformar */
+    width: 250px; /* Define a largura dos itens */
+}
+
+.service-item i {
+    color: #e6324b; /* Define a cor do ícone */
+    font-size: 4em; /* Define o tamanho do ícone */
+}
+
+.service-item h3 {
+    font-size: 1.8em; /* Define o tamanho da fonte do título */
+    text-align: center; /* Centraliza o texto */
+}
+
+.service-item p {
+    color: #353634; /* Define a cor do texto */
+    font-size: 1em; /* Define o tamanho da fonte do texto */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do item ao passar o mouse */
+}

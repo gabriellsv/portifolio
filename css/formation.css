@@ -1,0 +1,140 @@
+/* ==========================================
+   Tecnologias
+   ========================================== */
+
+.tecnologies {
+    display: flex;
+    margin: 50px 100px;
+}
+
+.left-section {
+    width: 60%;
+}
+
+.formacao,
+.hardskills {
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.hardskills {
+    text-align: center;
+}
+
+.softskills {
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 413px;
+    margin-left: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+/* Lista de logos de habilidades */
+.skills-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.skill {
+    color: #e6324b;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+
+.tooltip {
+    background-color: #353634;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    opacity: 0;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+    z-index: 1;
+    bottom: 125%; /* Ajusta a posição acima do ícone */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip::after {
+    border-color: #353634 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    position: absolute;
+    top: 100%; /* Posiciona a seta abaixo da tooltip */
+    left: 50%;
+    margin-left: -5px;
+}
+
+.skill:hover .tooltip {
+    opacity: 1;
+}
+
+.skills-logos i {
+    font-size: 70px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.skills-logos i:hover {
+    transform: scale(1.2);
+}
+
+.softskills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.softskills ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #353634;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.softskills ul li:last-child {
+    border-bottom: none;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .tecnologies {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .left-section,
+    .formacao,
+    .hardskills,
+    .softskills {
+        width: 100%;
+        margin: 0;
+    }
+
+    .formacao,
+    .hardskills,
+    .softskills {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .softskills {
+        height: auto;
+    }
+
+    .skills-logos i {
+        font-size: 45px;
+    }
+}
+

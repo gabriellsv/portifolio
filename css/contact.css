@@ -1,0 +1,144 @@
+/* ==========================================
+   Contato
+   ========================================== */
+
+   .contato {
+    margin: 20px 100px;
+    padding: 50px;
+}
+
+.contato-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contato-esquerdo {
+    flex: 0.3;
+    padding-right: 100px;
+}
+
+.contato-direito {
+    flex: 0;
+}
+
+.contato h1 {
+    color: #f2e3c6;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contato h2 {
+    color: #f2e3c6;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contato-direito {
+    display: flex;
+    flex-direction: column; /* Garante que os itens fiquem em coluna */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contato-direito li {
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contato-direito a {
+    color: #f2e3c6;
+    display: flex;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contato-direito a:hover {
+    color: #e6324b;
+}
+
+.contato-direito i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .contato {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .contato-container {
+        align-items: center; /* Centraliza os itens horizontalmente */
+        flex-direction: column; /* Alinha os itens verticalmente */
+    }
+
+    .contato-esquerdo {
+        flex: 1;
+        padding-right: 0;
+        margin-bottom: 20px; /* Adiciona espaçamento inferior */
+    }
+
+    .contato-direito {
+        flex: 1;
+    }
+
+    .contato h1 {
+        font-size: 1.5em; /* Ajusta o tamanho da fonte do título */
+    }
+
+    .contato h2 {
+        font-size: 1.2em; /* Ajusta o tamanho da fonte do subtítulo */
+    }
+
+    .contato-direito li {
+        font-size: 16px; /* Ajusta o tamanho da fonte dos itens */
+    }
+
+    .contato-direito i {
+        font-size: 20px; /* Ajusta o tamanho dos ícones */
+    }
+}
+
+/* Responsividade para telas médias (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contato {
+        margin: 20px;
+        padding: 30px;
+    }
+
+    .contato-container {
+        flex-direction: row; /* Alinha os itens horizontalmente */
+        justify-content: space-between; /* Espaça os itens */
+    }
+
+    .contato-esquerdo {
+        flex: 0.4;
+        padding-right: 50px; /* Ajusta o padding para telas médias */
+    }
+
+    .contato-direito {
+        flex: 0.6;
+    }
+
+    .contato h1 {
+        font-size: 1.8em; /* Ajusta o tamanho da fonte do título */
+    }
+
+    .contato h2 {
+        font-size: 1.4em; /* Ajusta o tamanho da fonte do subtítulo */
+    }
+
+    .contato-direito li {
+        font-size: 17px; /* Ajusta o tamanho da fonte dos itens */
+    }
+
+    .contato-direito i {
+        font-size: 22px; /* Ajusta o tamanho dos ícones */
+    }
+}
