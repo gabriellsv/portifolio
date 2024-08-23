@@ -2,85 +2,88 @@
    Container e Layout
    ========================================== */
 
-   .container {
-    align-items: center; /* Centraliza verticalmente */
-    background-color: #f2e3c6;
-    border-radius: 25px;
-    box-sizing: border-box; /* Inclui padding e border na largura e altura total */
-    display: flex;
-    flex-direction: row; /* Layout padrão para telas grandes */
-    height: 660px; /* Permite altura dinâmica baseada no conteúdo */
-    margin: 100px 200px;
-    padding: 20px;
+.container {
+  align-items: center; /* Centraliza verticalmente */
+  background-color: #f2e3c6;
+  border-radius: 25px;
+  box-sizing: border-box; /* Inclui padding e border na largura e altura total */
+  display: flex;
+  flex-direction: row; /* Layout padrão para telas grandes */
+  height: 660px; /* Permite altura dinâmica baseada no conteúdo */
+  margin: 100px 200px;
+  padding: 20px;
 }
 
 .container h1 {
-    color: #353634;
-    font-size: 60px;
+  color: #353634;
+  font-size: 60px;
 }
 
-.left, .right {
-    box-sizing: border-box; /* Inclui padding e border na largura e altura total */
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+.left,
+.right {
+  box-sizing: border-box; /* Inclui padding e border na largura e altura total */
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
 .left {
-    margin-left: 10%;
+  margin-left: 10%;
 }
 
 .profile-pic {
-    border-radius: 50%; /* Torna a imagem circular */
-    height: 300px; /* Define a altura da imagem */
-    object-fit: cover; /* Ajusta a imagem para cobrir o container */
-    width: 300px; /* Define a largura da imagem */
+  border-radius: 50%; /* Torna a imagem circular */
+  height: 300px; /* Define a altura da imagem */
+  object-fit: cover; /* Ajusta a imagem para cobrir o container */
+  width: 300px; /* Define a largura da imagem */
 }
 
 .right {
-    align-items: center;
+  align-items: center;
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    .container {
-        align-items: center; /* Centraliza horizontalmente */
-        flex-direction: column; /* Alinha os itens verticalmente */
-        height: auto; /* Permite que a altura se ajuste ao conteúdo */
-        margin: 20px; /* Ajusta a margem para telas menores */
-    }
+/* Celulares */
+@media (max-width: 450px) {
+  .container {
+    align-items: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    margin: auto; /* Ajusta a margem para telas menores */
+  }
 
-    .container h1 {
-        font-size: 50px;
-    }
+  .container h1 {
+    font-size: 40px;
+  }
 
-    .left, .right {
-        margin-left: 0; /* Remove a margem do lado esquerdo */
-        width: 100%; /* Faz com que ambos os lados ocupem toda a largura disponível */
-    }
+  .left,
+  .right {
+    margin-left: 0; /* Remove a margem do lado esquerdo */
+    width: 100%; /* Faz com que ambos os lados ocupem toda a largura disponível */
+  }
 
-    .profile-pic {
-        height: 200px; /* Ajusta a altura da imagem */
-        width: 200px; /* Ajusta a largura da imagem */
-    }
+  .profile-pic {
+    height: 200px; /* Ajusta a altura da imagem */
+    width: 200px; /* Ajusta a largura da imagem */
+  }
 }
 
-/* Responsividade para telas médias */
+/* Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        align-items: center; /* Centraliza horizontalmente */
-        flex-direction: column; /* Alinha os itens verticalmente */
-        height: auto; /* Permite que a altura se ajuste ao conteúdo */
-        margin: 20px 100px; /* Ajusta a margem para telas médias */
-    }
+  .container {
+    align-items: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    margin: 35px 90px; /* Ajusta a margem para telas médias */
+  }
 
-    .left, .right {
-        margin-left: 0; /* Remove a margem do lado esquerdo */
-        width: 100%; /* Faz com que ambos os lados ocupem toda a largura disponível */
-    }
+  .left,
+  .right {
+    margin-left: 0; /* Remove a margem do lado esquerdo */
+    width: 100%; /* Faz com que ambos os lados ocupem toda a largura disponível */
+  }
 
-    .profile-pic {
-        height: 250px; /* Ajusta a altura da imagem para telas médias */
-        width: 250px; /* Ajusta a largura da imagem para telas médias */
-    }
+  .profile-pic {
+    height: 250px; /* Ajusta a altura da imagem para telas médias */
+    width: 250px; /* Ajusta a largura da imagem para telas médias */
+  }
 }

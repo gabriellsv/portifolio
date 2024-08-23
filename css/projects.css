@@ -2,90 +2,93 @@
    Projetos
    ========================================== */
 
-   .projetos {
-    display: flex; /* Usa Flexbox para layout */
-    flex-wrap: wrap; /* Permite que os itens quebrem em várias linhas */
-    gap: 50px; /* Espaçamento entre os itens internos */
-    margin: 20px 100px; /* Margem horizontal de 100px */
-    padding: 20px; /* Espaçamento interno */
-    text-align: center;
+.projetos {
+  display: flex; /* Usa Flexbox para layout */
+  flex-wrap: wrap; /* Permite que os itens quebrem em várias linhas */
+  gap: 50px; /* Espaçamento entre os itens internos */
+  margin: 20px 100px; /* Margem horizontal de 100px */
+  padding: 20px; /* Espaçamento interno */
+  text-align: center;
 }
 
 .projetos h1 {
-    color: #353634;
-    font-size: 30px;
+  color: #353634;
+  font-size: 30px;
 }
 
-.projetos-left, .projetos-right {
-    display: flex;
-    flex: 1; /* Permite que o item ocupe o espaço disponível */
-    flex-direction: column; /* Coloca os itens em uma coluna */
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
+.projetos-left,
+.projetos-right {
+  display: flex;
+  flex: 1; /* Permite que o item ocupe o espaço disponível */
+  flex-direction: column; /* Coloca os itens em uma coluna */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
 }
 
 /* Estilo para a imagem dos projetos */
 .img-projetos {
-    border-radius: 10px; /* Cantos arredondados na imagem */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave na imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    max-width: 100%; /* Imagem não ultrapassa a largura do contêiner */
+  border-radius: 10px; /* Cantos arredondados na imagem */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave na imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  max-width: 100%; /* Imagem não ultrapassa a largura do contêiner */
 }
 
 /* Linha horizontal */
 hr {
-    background-color: #ffc6a5; /* Cor da linha */
-    border: none; /* Remove a borda padrão */
-    height: 2px; /* Altura da linha */
-    margin: 20px 200px; /* Espaçamento vertical */
+  background-color: #ffc6a5; /* Cor da linha */
+  border: none; /* Remove a borda padrão */
+  height: 2px; /* Altura da linha */
+  margin: 20px 200px; /* Espaçamento vertical */
 }
 
-/* Responsividade para telas menores e médias */
-@media (max-width: 768px) {
-    .projetos {
-        align-items: center; /* Centraliza horizontalmente */
-        flex-direction: column; /* Alinha os itens verticalmente */
-        margin: 20px; /* Ajusta a margem para telas menores */
-        padding: 10px; /* Ajusta o padding para telas menores */
-    }
+/* Celulares */
+@media (max-width: 450px) {
+  .projetos {
+    align-items: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    margin: 20px; /* Ajusta a margem para telas menores */
+    padding: 10px; /* Ajusta o padding para telas menores */
+  }
 
-    .projetos-left, .projetos-right {
-        margin-bottom: 20px; /* Espaçamento entre os blocos */
-        width: 100%; /* Faz com que ambos os lados ocupem toda a largura disponível */
-    }
+  .projetos-left,
+  .projetos-right {
+    margin-bottom: 20px; /* Espaçamento entre os blocos */
+    width: 100%; /* Faz com que ambos os lados ocupem toda a largura disponível */
+  }
 
-    .img-projetos {
-        width: 100%; /* Ajusta a imagem para a largura total do contêiner */
-    }
+  .img-projetos {
+    width: 100%; /* Ajusta a imagem para a largura total do contêiner */
+  }
 
-    hr {
-        margin: 20px 50px; /* Reduz as margens para dispositivos móveis */
-    }
+  hr {
+    margin: 20px 50px; /* Reduz as margens para dispositivos móveis */
+  }
 }
 
-/* Para garantir que os projetos sejam exibidos corretamente para telas médias */
+/* Tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
-    .projetos {
-        align-items: center; /* Centraliza horizontalmente */
-        flex-direction: column; /* Alinha os itens verticalmente */
-        margin: 20px; /* Ajusta a margem para telas médias */
-        padding: 10px; /* Ajusta o padding para telas médias */
-    }
+  .projetos {
+    align-items: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    margin: 20px; /* Ajusta a margem para telas médias */
+    padding: 10px; /* Ajusta o padding para telas médias */
+  }
 
-    .projetos-left, .projetos-right {
-        margin-bottom: 20px; /* Espaçamento entre os blocos */
-        width: 100%; /* Faz com que ambos os lados ocupem toda a largura disponível */
-    }
+  .projetos-left,
+  .projetos-right {
+    margin-bottom: 20px; /* Espaçamento entre os blocos */
+    width: 100%; /* Faz com que ambos os lados ocupem toda a largura disponível */
+  }
 
-    .img-projetos {
-        width: 100%; /* Ajusta a imagem para a largura total do contêiner */
-    }
+  .img-projetos {
+    width: 100%; /* Ajusta a imagem para a largura total do contêiner */
+  }
 
-    hr {
-        margin: 20px 100px; /* Reduz as margens para tablets */
-    }
+  hr {
+    margin: 20px 100px; /* Reduz as margens para tablets */
+  }
 }
 
 /* Para garantir que a ordem dos projetos esteja correta */
 .projetos:nth-child(2) {
-    flex-direction: row-reverse; /* Inverte a ordem dos itens para o segundo projeto */
+  flex-direction: row-reverse; /* Inverte a ordem dos itens para o segundo projeto */
 }

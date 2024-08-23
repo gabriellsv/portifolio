@@ -1,270 +1,462 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio</title>
-    <link rel="stylesheet" href="css/about-me.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/service.css">
-    <link rel="stylesheet" href="css/formation.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="css/about-me.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/service.css" />
+    <link rel="stylesheet" href="css/formation.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Menu -->
     <header class="menu">
-        <h2>Gabriel Gonçalves</h2>      
-        <nav>
-            <a href="#projetos" >Projetos</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#formacao">Formação</a>
-            <a href="#contatos">Contato</a>
-        </nav>
+      <h2>Gabriel Gonçalves</h2>
+      <nav>
+        <a href="#projetos">Projetos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contatos">Contato</a>
+      </nav>
     </header>
 
     <!-- Sobre mim -->
     <main class="container">
-        <div class="left">
-            <h1>Desenvolvedor Frontend.</h1>
-            <h4>Sou um desenvolvedor front-end apaixonado por transformar ideias em realidade, combinando habilidades técnicas e criatividade. Estou sempre em busca de novas oportunidades para aperfeiçoar minhas habilidades e trabalhar em projetos desafiadores. Meu objetivo é aprender e crescer na área. Atualmente, curso Engenharia da Computação pela PUC Minas. Minhas principais tecnologias são: <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Bootstrap</strong> e <strong>WordPress</strong>. </h4>
-            
-            <ul class="redes-sociais">
-                <li>
-                    <a href="https://github.com/gabriellsv" title="Ir para o GitHub" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/gabriellsv/" title="Ir para o LinkedIn" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>               
-                <li>
-                    <a href="mailto:gabrelgoncalves80@hotmail.com" title="Enviar um e-mail" target="_blank">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://wa.me/5531982269992" title="Enviar Mensagem no WhatsApp" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        
-        <div class="right">
-            <img src="img/eu2.png" alt="Gabriel da Silva Gonçalves" class="profile-pic">            
-        </div>
+      <section class="left">
+        <h1>Desenvolvedor Frontend.</h1>
+        <h4>
+          Sou um desenvolvedor front-end apaixonado por transformar ideias em
+          realidade, combinando habilidades técnicas e criatividade. Estou
+          sempre em busca de novas oportunidades para aperfeiçoar minhas
+          habilidades e trabalhar em projetos desafiadores. Meu objetivo é
+          aprender e crescer na área. Atualmente, curso Engenharia da Computação
+          pela PUC Minas. Minhas principais tecnologias são:
+          <strong>HTML</strong>, <strong>CSS</strong>,
+          <strong>JavaScript</strong>, <strong>Bootstrap</strong> e
+          <strong>WordPress</strong>.
+        </h4>
+
+        <ul class="redes-sociais">
+          <li>
+            <a
+              href="https://github.com/gabriellsv"
+              title="Ir para o GitHub"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/gabriellsv/"
+              title="Ir para o LinkedIn"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:gabrelgoncalves80@hotmail.com"
+              title="Enviar um e-mail"
+              target="_blank"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://wa.me/5531982269992"
+              title="Enviar Mensagem no WhatsApp"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="right">
+        <img
+          src="img/eu2.png"
+          alt="Gabriel da Silva Gonçalves"
+          class="profile-pic"
+        />
+      </section>
     </main>
-    
+
     <!-- Projetos -->
     <h1 align="center">Projetos</h1>
 
     <!-- Projeto 1 -->
-    <aside id="projetos" class="projetos">
-        <div class="projetos-left">
-            <h1>Confeitaria Eliana</h1>
-            <h4>Criei o site da Confeitaria Eliana utilizando <strong>WordPress</strong> e o <strong>Elementor</strong>. Este projeto destaca a experiência da minha mãe, Eliana, na transformação de bolos em obras-primas, com um foco especial em bolos temáticos e de aniversário. O site foi desenvolvido para refletir a alta qualidade e a personalização dos produtos, proporcionando uma experiência visualmente atraente e fácil de navegar para os clientes.</h4>
-            
-            <ul class="redes-sociais">
-                <li>
-                    <a href="https://confeitariaeliana.com.br/" target="_blank">
-                        <i class="fas fa-eye"></i>
-                    </a>
-                </li>   
-            </ul>
-        </div>
+    <section id="projetos" class="projetos">
+      <article class="projetos-left">
+        <h1>Confeitaria Eliana</h1>
+        <h4>
+          Criei o site da Confeitaria Eliana utilizando
+          <strong>WordPress</strong> e o <strong>Elementor</strong>. Este
+          projeto destaca a experiência da minha mãe, Eliana, na transformação
+          de bolos em obras-primas, com um foco especial em bolos temáticos e de
+          aniversário. O site foi desenvolvido para refletir a alta qualidade e
+          a personalização dos produtos, proporcionando uma experiência
+          visualmente atraente e fácil de navegar para os clientes.
+        </h4>
 
-        <div class="projetos-right">          
+        <ul class="redes-sociais">
+          <li>
             <a href="https://confeitariaeliana.com.br/" target="_blank">
-                <img src="img/confeitariaeliana.png" alt="Confeitaria Eliana" class="img-projetos" />
+              <i class="fas fa-eye"></i>
             </a>
-        </div>
-    </aside>
+          </li>
+        </ul>
+      </article>
 
-    <hr>
+      <figure class="projetos-right">
+        <a href="https://confeitariaeliana.com.br/" target="_blank">
+          <img
+            src="img/confeitariaeliana.png"
+            alt="Confeitaria Eliana"
+            class="img-projetos"
+          />
+        </a>
+      </figure>
+    </section>
+
+    <hr />
     <!-- Projeto 2 -->
-    <aside class="projetos">
-        <div class="projetos-right">
+    <section class="projetos">
+      <figure class="projetos-right">
+        <a href="https://gabriellsv.github.io/calculator/" target="_blank">
+          <img
+            src="img/calculadora.png"
+            alt="Calculadora"
+            class="img-projetos"
+          />
+        </a>
+      </figure>
+
+      <article class="projetos-left">
+        <h1>Calculadora</h1>
+        <h4>
+          Desenvolvi a Calculadora Interativa utilizando <strong>HTML</strong>,
+          <strong>CSS</strong> e <strong>JavaScript</strong>. Este projeto
+          demonstra minhas habilidades em criação de interfaces e
+          funcionalidades interativas, permitindo que os usuários realizem
+          cálculos de forma prática e intuitiva. A calculadora foi projetada
+          para ser responsiva e fácil de usar, oferecendo uma experiência de
+          usuário agradável e eficiente para diferentes dispositivos e tamanhos
+          de tela.
+        </h4>
+
+        <ul class="redes-sociais">
+          <li>
             <a href="https://gabriellsv.github.io/calculator/" target="_blank">
-                <img src="img/calculadora.png" alt="Calculadora" class="img-projetos" />
+              <i class="fas fa-eye"></i>
             </a>
-        </div>
 
-        <div class="projetos-left">
-            <h1>Calculadora</h1>
-            <h4>Desenvolvi a Calculadora Interativa utilizando <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Este projeto demonstra minhas habilidades em criação de interfaces e funcionalidades interativas, permitindo que os usuários realizem cálculos de forma prática e intuitiva. A calculadora foi projetada para ser responsiva e fácil de usar, oferecendo uma experiência de usuário agradável e eficiente para diferentes dispositivos e tamanhos de tela.</h4>
-            
-            
-            <ul class="redes-sociais">
-                <li>
-                    <a href="https://gabriellsv.github.io/calculator/" target="_blank">                
-                        <i class="fas fa-eye"></i>
-                    </a>
-            
-                    <a href="https://github.com/gabriellsv/calculator" target="_blank">
-                        <i class="fas fa-code"></i>
-                    </a>
-                </li>
-            </ul>
-            
-        </div>
-    </aside>
+            <a href="https://github.com/gabriellsv/calculator" target="_blank">
+              <i class="fas fa-code"></i>
+            </a>
+          </li>
+        </ul>
+      </article>
+    </section>
 
-    <hr>
+    <hr />
     <!-- Projeto 3 -->
-    <aside class="projetos">
-        <div class="projetos-left">
-            <h1>Login Playstation</h1>
-            <h4>Recriei a tela de login do PlayStation utilizando <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Este projeto é um exercício de design e desenvolvimento, focado em replicar com precisão a interface e a funcionalidade da tela de login original. A recriação demonstra minhas habilidades em front-end, incluindo a construção de interfaces responsivas e a implementação de interações intuitivas que proporcionam uma experiência de usuário semelhante à do ambiente PlayStation.</h4>
-            
-            <ul class="redes-sociais">
-                <li>
-                    <a href="https://gabriellsv.github.io/login-playstation/" target="_blank">
-                        <i class="fas fa-eye"></i>
-                    </a>
-            
-                    <a href="https://github.com/gabriellsv/login-playstation" target="_blank">
-                        <i class="fas fa-code"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <section class="projetos">
+      <article class="projetos-left">
+        <h1>Login Playstation</h1>
+        <h4>
+          Recriei a tela de login do PlayStation utilizando
+          <strong>HTML</strong>, <strong>CSS</strong> e
+          <strong>JavaScript</strong>. Este projeto é um exercício de design e
+          desenvolvimento, focado em replicar com precisão a interface e a
+          funcionalidade da tela de login original. A recriação demonstra minhas
+          habilidades em front-end, incluindo a construção de interfaces
+          responsivas e a implementação de interações intuitivas que
+          proporcionam uma experiência de usuário semelhante à do ambiente
+          PlayStation.
+        </h4>
 
-        <div class="projetos-right">          
-            <a href="https://gabriellsv.github.io/login-playstation/" target="_blank">
-                <img src="img/login-playstation.png" alt="Confeitaria Eliana" class="img-projetos" />
+        <ul class="redes-sociais">
+          <li>
+            <a
+              href="https://gabriellsv.github.io/login-playstation/"
+              target="_blank"
+            >
+              <i class="fas fa-eye"></i>
             </a>
-        </div>
-    </aside>
 
-    <!-- Serviços -->   
-    <br><h1 align="center">Meus Serviços Contratáveis</h1>
-    <div id="servicos" class="services">
-        <div class="service-item">
-            <i class="fas fa-laptop-code"></i>
-            <h3>Criação de Sites</h3>
-            <p>Desenvolvimento de sites personalizados para atender às suas necessidades e objetivos.</p>
-        </div>
-        <div class="service-item">
-            <i class="fas fa-file-code"></i>
-            <h3>Criação de Landing Pages</h3>
-            <p>Design e implementação de landing pages eficazes para campanhas de marketing e conversões.</p>
-        </div>
-        <div class="service-item">
-            <i class="fas fa-cogs"></i>
-            <h3>Otimização</h3>
-            <p>Melhoria do desempenho e SEO do seu site para uma melhor experiência de usuário e classificação nos motores de busca.</p>
-        </div>
-        <div class="service-item">
-            <i class="fas fa-plug"></i>
-            <h3>Conexão de APIs</h3>
-            <p>Integração de APIs para adicionar funcionalidades e conectar seu site a outros serviços.</p>
-        </div>
-    </div>
+            <a
+              href="https://github.com/gabriellsv/login-playstation"
+              target="_blank"
+            >
+              <i class="fas fa-code"></i>
+            </a>
+          </li>
+        </ul>
+      </article>
+
+      <figure class="projetos-right">
+        <a
+          href="https://gabriellsv.github.io/login-playstation/"
+          target="_blank"
+        >
+          <img
+            src="img/login-playstation.png"
+            alt="Confeitaria Eliana"
+            class="img-projetos"
+          />
+        </a>
+      </figure>
+    </section>
+
+    <!-- Serviços -->
+    <br />
+    <h1 align="center">Meus Serviços Contratáveis</h1>
+    <section id="servicos" class="services">
+      <div class="service-item">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Criação de Sites</h3>
+        <p>
+          Desenvolvimento de sites personalizados para atender às suas
+          necessidades e objetivos.
+        </p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-file-code"></i>
+        <h3>Criação de Landing Pages</h3>
+        <p>
+          Design e implementação de landing pages eficazes para campanhas de
+          marketing e conversões.
+        </p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-cogs"></i>
+        <h3>Otimização</h3>
+        <p>
+          Melhoria do desempenho e SEO do seu site para uma melhor experiência
+          de usuário e classificação nos motores de busca.
+        </p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-plug"></i>
+        <h3>Conexão de APIs</h3>
+        <p>
+          Integração de APIs para adicionar funcionalidades e conectar seu site
+          a outros serviços.
+        </p>
+      </div>
+    </section>
 
     <!-- Formação -->
-    <br><h1  align="center">Formação Acadêmica</h1>
-    <div id="formacao" class="tecnologies">
-        <div class="left-section">
-            <div class="formacao">
-                <h2 align="center">Ensino</h2>
-                <p><strong>2022 - 2026 </strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bacharel em Engenharia da Computação - PUC Minas</p>
-                <p><strong>2018 - 2020 </strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ensino Médio/Técnico de Informática - Colégio COTEMIG</p>
-            </div>
+    <br />
+    <h1 align="center">Formação Acadêmica</h1>
+    <section id="formacao" class="tecnologies">
+      <div class="left-section">
+        <article class="formacao">
+          <h2 align="center">Ensino</h2>
+          <p>
+            <strong>2022 - 2026</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bacharel
+            em Engenharia da Computação - PUC Minas
+          </p>
+          <p>
+            <strong>2018 - 2020</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ensino
+            Médio/Técnico de Informática - Colégio COTEMIG
+          </p>
+        </article>
 
-            <div class="hardskills">
-                <h2>Hard Skills</h2>
-                <div class="skills-logos">
-                    <div class="skill">
-                        <i class="fab fa-html5"></i>
-                        <span class="tooltip">HTML5</span>
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-css3-alt"></i>
-                        <span class="tooltip">CSS3</span>
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-js"></i>
-                        <span class="tooltip">JavaScript</span>
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-bootstrap"></i>
-                        <span class="tooltip">Bootstrap</span>
-                    </div>
-                    <div class="skill">
-                        <i class="fab fa-wordpress"></i>
-                        <span class="tooltip">WordPress</span>
-                    </div>
-                </div>
+        <aside class="hardskills">
+          <h2>Hard Skills</h2>
+          <div class="skills-logos">
+            <div class="skill">
+              <i class="fab fa-html5"></i>
+              <span class="tooltip">HTML5</span>
             </div>
-        </div>
+            <div class="skill">
+              <i class="fab fa-css3-alt"></i>
+              <span class="tooltip">CSS3</span>
+            </div>
+            <div class="skill">
+              <i class="fab fa-js"></i>
+              <span class="tooltip">JavaScript</span>
+            </div>
+            <div class="skill">
+              <i class="fab fa-bootstrap"></i>
+              <span class="tooltip">Bootstrap</span>
+            </div>
+            <div class="skill">
+              <i class="fab fa-wordpress"></i>
+              <span class="tooltip">WordPress</span>
+            </div>
+          </div>
+        </aside>
+      </div>
 
-        <div class="softskills">
-            <h2 align="center">Soft Skills</h2><br>
-            <ul>
-                <li>Adaptabilidade</li>
-                <li>Comunicação Eficaz</li>
-                <li>Criatividade</li>
-                <li>Facilidade de Aprendizagem</li>
-                <li>Organização</li>
-                <li>Pontualidade</li>
-                <li>Resolução de Problemas</li>
-                <li>Trabalho em Equipe</li>
-            </ul>
-        </div>           
-    </div>       
+      <article class="softskills">
+        <h2 align="center">Soft Skills</h2>
+        <ul>
+          <li>Adaptabilidade</li>
+          <li>Comunicação Eficaz</li>
+          <li>Criatividade</li>
+          <li>Facilidade de Aprendizagem</li>
+          <li>Organização</li>
+          <li>Pontualidade</li>
+          <li>Resolução de Problemas</li>
+          <li>Trabalho em Equipe</li>
+        </ul>
+      </article>
+    </section>
 
     <!-- Botão de subir -->
     <button id="scrollToTopBtn" class="scrollToTopBtn">
-	    <i class="fas fa-rocket"></i>
-	    <div class="arrow-up"></div>
-	</button>
+      <i class="fas fa-rocket"></i>
+      <div class="arrow-up"></div>
+    </button>
 
-    <!-- Rodapé -->     
+    <!-- Rodapé -->
     <footer id="contatos" class="footer">
-        <!-- Contato -->
-        <h1>Contato</h1>
-        <div class="contato">            
-            <div class="contato-container">                             
-                
-                <div class="contato-esquerdo">                  
-                    <h2>Estou disponível para novos projetos. Entre em contato para marcarmos uma conversa.</h2>
-                </div>
-                              
-                <div class="contato-direito">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/gabriellsv" title="Ir para o GitHub" target="_blank">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/gabriellsv/" title="Ir para o LinkedIn" target="_blank">
-                                <i class="fab fa-linkedin-in"></i> LinkedIn
-                            </a>
-                        </li>               
-                        <li>
-                            <a href="mailto:gabrelgoncalves80@hotmail.com" title="Enviar um e-mail" target="_blank">
-                                <i class="fas fa-envelope"></i> gabrielgoncalves80@hotmail.com
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://wa.me/5531982269992" title="Enviar Mensagem no WhatsApp" target="_blank">
-                                <i class="fab fa-whatsapp"></i> +55 31 98226-9992
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+      <!-- Contato -->
+      <div class="footer-content">
+        <header>
+          <h1>Contato</h1>
+        </header>
+
+        <section class="contato">
+          <div class="contato-container">
+            <div class="contato-esquerdo">
+              <h2>
+                Estou disponível para novos projetos. Entre em contato para
+                marcarmos uma conversa.
+              </h2>
             </div>
-        </div>
-        <p>© 2024 - Design and Code by Gabriel Gonçalves</p>
-    </footer>
+
+            <div class="contato-direito">
+              <ul>
+                <li>
+                  <a
+                    href="https://github.com/gabriellsv"
+                    title="Ir para o GitHub"
+                    target="_blank"
+                  >
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/gabriellsv/"
+                    title="Ir para o LinkedIn"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin-in"></i> LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailt<!-- Rodapé -->
+<footer id="contatos" class="footer">
+  <!-- Contato -->
+  <div class="footer-content">
+    <header>
+      <h1>Contato</h1>
+    </header>
     
+    <section class="contato">
+      <div class="contato-container">
+        <div class="contato-esquerdo">
+          <h2>
+            Estou disponível para novos projetos. Entre em contato para
+            marcarmos uma conversa.
+          </h2>
+        </div>
+
+        <div class="contato-direito">
+          <ul>
+            <li>
+              <a
+                href="https://github.com/gabriellsv"
+                title="Ir para o GitHub"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/gabriellsv/"
+                title="Ir para o LinkedIn"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:gabrelgoncalves80@hotmail.com"
+                title="Enviar um e-mail"
+                target="_blank"
+              >
+                <i class="fas fa-envelope"></i> gabrielgoncalves80@hotmail.com
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/5531982269992"
+                title="Enviar Mensagem no WhatsApp"
+                target="_blank"
+              >
+                <i class="fab fa-whatsapp"></i> +55 31 98226-9992
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2024 - Design and Code by Gabriel Gonçalves</p>
+  </div>
+</footer>
+o:gabrelgoncalves80@hotmail.com"
+                    title="Enviar um e-mail"
+                    target="_blank"
+                  >
+                    <i class="fas fa-envelope"></i>
+                    gabrielgoncalves80@hotmail.com
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.me/5531982269992"
+                    title="Enviar Mensagem no WhatsApp"
+                    target="_blank"
+                  >
+                    <i class="fab fa-whatsapp"></i> +55 31 98226-9992
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 - Design and Code by Gabriel Gonçalves</p>
+      </div>
+    </footer>
+
     <script type="text/javascript" src="js/script.js"></script>
-</body>
+  </body>
 </html>
